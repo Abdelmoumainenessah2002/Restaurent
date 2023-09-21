@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+
+/*
+    Generale styles
+    1-header
+    2-Home section
+    3-Service-section
+    4-Menu section
+    5-Menu2 section
+    6-Products section
+    7-Team section
+    8-Rate section
+    9-reservation section
+    10-Footer section
+*/
+
+
+
+/* Generale styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overlay{
+    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.container{
+    width: 88%;
+    margin: auto;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
+    font-family: inherit;
+}
+
+.pd-y{
+    padding: 90px 0 30px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* 1- Header*/
+
+.header{
+    background: #000;
+}
+
+.header-content{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo{
+    width: 40%;
+    float: left;
+}
+
+.header .logo img{
+    width: 30%;
+    margin-top: 5px;
+}
+
+.list{
+    float: left;
+    width: 60%;
+}
+
+.header .nav{
+    float: right;
+    list-style: none;
+}
+
+.header .nav > li {
+    display: inline-block;
+    font-size: 17px;
+    font-family: inherit;
+}
+
+.header .nav > li > a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.header .nav > li > a.border{
+    border: 1px solid #fff;
+}
+
+
+/* 2- Home section */
+.home{
+    height: 390px;
+    background-image: url(../images/index/contact.webp);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.home .home-content{
+    position: absolute;
+    width: 90%;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.home .title{
+    color: #fff;
+    font-size: 3rem;
+    line-height: 1.5;
+    opacity: 0.95;
+}
+
+.home .home-desc{
+    font-size: 16px;
+    margin: 20px 0;
+    color: #fff;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+    opacity: 0.95;
+}
+
+/* 9-Reservation section */
+.reservation {
+    background-color: #dfe7ee;
+    padding-top: 80px;
+}
+
+.reservation-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.reservation-title {
+    display: block;
+    padding: 20px 0 ;
+    font-size: 33px;
+    text-transform: capitalize;  
+    color: #000;
+}
+
+.reservation-desc {
+    font-size: 13px;
+    color: #212121;
+    padding-bottom: 20px;
+}
+
+.reservation-btn {
+    background: none;
+    min-width: 180px;
+    height: 46.39px;
+    border: 1px solid #000;
+    padding: 10px 0 ;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 13.5px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.reservation-btn:hover{
+    background: #000;
+    color: #fff;
+}
+
+.telephone {
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.phone-number {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.email {
+    font-size: 15px;
+    color: #4d4d4d;
+    margin-bottom: 50px;
+}
+
+/* Contact-Map section */
+.contact-map {
+    background-color: #dfe7ee;
+}
+
+.contact-map-content {
+    overflow: hidden;
+}
+
+.contact-map-item {
+    float: left;
+    width: 48%;
+    height: 580px;
+    
+}
+
+.contact-map-item iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.contact-map-title {
+    font-size: 25px;
+    font-weight: 400;
+    color: #212121;
+    margin: 40px 0 15px 0;
+    text-transform: capitalize;
+}
+
+.contact-map-desc {
+    font-size: 15px;
+    color: #4d4d4d;
+    line-height: 1.3;
+}
+
+.contact-map-item input, .contact-map-item textarea  {
+    display: block;
+    width: 540px;
+    margin: 20px 0;
+    padding: 5px 0 0 10px;
+
+}
+
+.contact-map-item input {
+    height: 35px;
+}
+
+.contact-map-item textarea {
+    resize: vertical;
+    height: 80px;
+    min-height: 150px;
+}
+
+.contact-map-item input::placeholder, .contact-map-item textarea::placeholder {
+    font-size: 15px;
+    color: #969191;
+} 
+
+
+.contact-btn {
+    display: block;
+    background: none;
+    width: 250px;
+    height: 46.39px;
+    border: 1px solid #000;
+    padding: 10px 0 ;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 13.5px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.contact-btn:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* Footer section */
+footer {
+    background: #212121;
+}
+
+.footer-content {
+    overflow: hidden;
+}
+
+.footer-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-item .footer-title {
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.our-location {
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px
+}
+
+.sonatiba{
+    font-size: 14px ;
+}
+
+.last {
+    float: right;
+    text-align: left;
+}
+
+.last span {
+    display: block;
+    margin: 0 0 20px 0 ;
+    line-height: 1.5;
+}
+
+.last span i {
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 8px;
+}
